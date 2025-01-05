@@ -383,5 +383,5 @@ class ParlerTTSTrainingArguments(Seq2SeqTrainingArguments):
     )
     range_cond_drop_description: Optional[Annotated[List[float], 2]] = field(
         default=None,
-        metadata={"help": "Range of the description to drop."},
+        metadata={"help": "Ratio range of the index up to which the audio codes will not be trained."},
     )
